@@ -44,12 +44,15 @@ def move():
     ontimer(move,100)
 
 setup(420,420,370,0)
+
 hideturtle()
 tracer(False)
 listen()
+
 onkey(lambda: change(10,0),"Right")
 onkey(lambda: change(-10,0),"Left")
 onkey(lambda: change(0,10),"Up")
 onkey(lambda: change(0,-10),"Down")
+
 move()
 done()
